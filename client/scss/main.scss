@@ -12,5 +12,10 @@
 @import 'base/typography';
 
 // Layouts
+@import 'layouts/layout';
+@import 'layouts/container';
 
 // Partials
+@import 'partials/grid-column';
+@import 'partials/todo-item';
+@import 'partials/popup';

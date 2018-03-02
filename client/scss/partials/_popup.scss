@@ -1,0 +1,47 @@
+.popup {
+	width: calc(100% - 38px);
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: $white;
+	border: 2px solid $pink;
+	border-radius: 5px;
+	box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.5);
+
+	&__header {
+		width: 100%;
+		height: 45px;
+		display: flex;
+		justify-content: space-between;
+		padding: 10px;
+		font-family: $poppins;
+		border-bottom: 2px solid $pink;
+	}
+
+	&__form {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 10px;
+	}
+
+	&__input {
+		min-width: 100%;
+		max-width: 100%;
+		height: 125px;
+		padding: 5px;
+	}
+
+	&__button {
+		margin: 20px;
+		padding: 8px 16px;
+		background-color: $pink;
+		color: $white;
+		border: solid $pink;
+		border-radius: 8px;
+	}
+}

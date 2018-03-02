@@ -1,0 +1,27 @@
+.todo {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	border: solid 2px $pink;
+	border-radius: 10px;
+	margin: 5px 0;
+
+	&__list {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		padding: 5px;
+		list-style-type: none;
+		border-bottom: solid 1px $pink;
+	}
+
+	&__list-item {
+		margin: 0 5px;
+	}
+
+	&__content {
+		width: 100%;
+		padding: 10px;
+		font-family: $poppins;
+	}
+}
