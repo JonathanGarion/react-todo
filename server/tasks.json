@@ -1,0 +1,16 @@
+{
+	"Tasks" : [
+		{
+			"content": "Set up HTML with BEM structure",
+			"status": "todo"
+		},
+		{
+			"content": "Add SCSS (use advanced features)",
+			"status": "todo"
+		},
+		{
+			"content": "Set up Back-end",
+			"status": "todo"
+		}
+	]
+}
