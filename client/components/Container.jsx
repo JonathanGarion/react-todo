@@ -6,9 +6,9 @@ class Container extends Component {
 	render() {
 		return (
 			<div className="todo-container">
-				<Column name='To Do' />
-				<Column name='In Progress' />
-				<Column name='Done' />
+				<Column name='To Do' status='todo' />
+				<Column name='In Progress' status='in-progress' />
+				<Column name='Done' status='done' />
 			</div>
 		);
 	}

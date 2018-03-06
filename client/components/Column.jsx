@@ -7,10 +7,37 @@ class Column extends Component {
 
 	constructor( state ) {
 		super( state );
+
 		this.state = {
+			tasks     : [],
+			apiUrl    : 'http://localhost:3001/api/tasks',
 			name      : state.name,
+			status    : state.status,
 			showPopup : false
 		};
+	}
+
+	// componentDidMount() {
+
+	// 	fetch( 'http://localhost:3001/api/tasks' )
+	// 		.then(( response ) => response.json())
+	// 		.then(( state ) => this.setState( { status : state.status } ));
+	// 		console.log( state + ' ' + response );
+	// }
+
+	updateTasks() {
+		fetch( this.state.apiUrl, {
+			method: 'GET'
+		})
+		.then( results => {
+			return results.json();
+		})
+		.then( resultsjson => {
+			let sortedList = this.sortTasks(resultjson);
+			this.setState({
+				tasks: sortedList
+			});
+		});
 	}
 
 	togglePopup() {
